@@ -1,0 +1,169 @@
+/* .tv9-interactives * {
+  padding: 0;
+  margin: 0;
+} */
+
+h2,
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  margin: 100px 0px;
+  box-sizing: border-box;
+}
+.cover {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+.cover h1 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+.cover p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.cover h1,
+.cover p {
+  margin: 0 auto 30px auto;
+  width: 91%;
+}
+.cover img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 91%;
+  margin: 0 auto 30px auto;
+}
+
+.sub-lead {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+/* Criteria */
+
+.critieria__img {
+  position: relative;
+  height: 435px;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.critieria__img .sizelg {
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+.critieria__img .sizexl {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  margin-top: -35px;
+}
+.critieria__img .sizexl img {
+  width: 50%;
+}
+
+.critieria__points {
+  position: relative;
+  text-align: center;
+  background-color: #f1c40f;
+  border-radius: 50px;
+  height: 70px;
+  line-height: 50px;
+  width: 90%;
+  max-width: 400px;
+  margin: -130px auto 0 auto;
+}
+
+.critieria__points p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 24px;
+  font-size: 20px;
+  width: 80%;
+}
+
+/* Electors Section */
+
+.electors {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.electors-who {
+  display: flex;
+  column-gap: 20px;
+  text-align: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.rajyasabha {
+  border: 1px solid #f00;
+  border-radius: 10px;
+  padding: 15px 15px 20px 15px;
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+.rajyasabha h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.rajyasabha ul {
+  display: flex;
+  column-gap: 15px;
+}
+.rajyasabha ul li span {
+  font-size: 24px;
+  margin-top: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.total-value {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
+.total-value p {
+  font-size: 22px;
+}
+
+#totValueMP {
+  color: #e64d3b;
+  font-size: 60px;
+}
+
+.mp-formula {
+  width: 85%;
+  margin: 20px auto 20px auto;
+  text-align: center;
+}
