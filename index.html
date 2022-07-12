@@ -28,102 +28,132 @@
         </p>
         <img src="img/presidents.png" alt="" />
       </section>
-      <section class="criteria">
-        <h2>Criteria for eligibility of becoming the President of India</h2>
-        <div class="critieria__img">
-          <img class="sizelg" src="img/blankface-2.png" alt="" />
-          <div class="sizexl">
-            <img class="" src="img/blankface-2.png" alt="" />
-            <img class="" src="img/blankface-2.png" alt="" />
+      <div class="boxwrapper">
+        <section class="criteria">
+          <h2>Criteria for eligibility of becoming the President of India</h2>
+          <div class="critieria__img">
+            <img class="sizelg" src="img/blankface-2.png" alt="" />
+            <div class="sizexl">
+              <img class="" src="img/blankface-2.png" alt="" />
+              <img class="" src="img/blankface-2.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="critieria__points">
-          <p style="display: none">Citizen of India</p>
-          <p style="display: none">Above 35 years of age</p>
-          <p style="display: block">
-            50 electors to propose; another 50 to second it
+          <div class="critieria__points">
+            <p style="display: none">Citizen of India</p>
+            <p style="display: none">Above 35 years of age</p>
+            <p style="display: block">
+              50 electors to propose; another 50 to second it
+            </p>
+            <p style="display: none">Should not hold any office of profit</p>
+            <p style="display: none">Other eligibilities same as an MP</p>
+          </div>
+        </section>
+        <section class="electors">
+          <h2>Who elects the President of India ?</h2>
+          <p class="sub-lead">
+            The value of votes by all the members of the Electoral College is
+            determined by the provisions of Ariticle 55(2) of the Constitution
+            of India. The value of a vote cast by the MP and MLA is calculated
+            based on the population count of the 1971 census.
           </p>
-          <p style="display: none">Should not hold any office of profit</p>
-          <p style="display: none">Other eligibilities same as an MP</p>
-        </div>
-      </section>
-      <section class="electors">
-        <h2>Who elects the President of India ?</h2>
-        <p class="sub-lead">
-          The value of votes by all the members of the Electoral College is
-          determined by the provisions of Ariticle 55(2) of the Constitution of
-          India. The value of a vote cast by the MP and MLA is calculated based
-          on the population count of the 1971 census.
-        </p>
-        <div class="electors-who">
-          <div class="electors-who__one">
-            <img src="img/blankface-1.png" alt="" />
-            <h3>MLAs</h3>
-            <p>Member of the Legislative Assembly</p>
+          <div class="electors-who">
+            <div class="electors-who__one">
+              <img src="img/blankface-1.png" alt="" />
+              <h3>MLAs</h3>
+              <p>Member of the Legislative Assembly</p>
+            </div>
+            <div class="electors-who__one">
+              <img src="img/blankface-1.png" alt="" />
+              <h3>MPs</h3>
+              <p>Member of the Parliament</p>
+            </div>
           </div>
-          <div class="electors-who__one">
-            <img src="img/blankface-1.png" alt="" />
-            <h3>MPs</h3>
-            <p>Member of the Parliament</p>
+          <p class="electors-who__note">
+            * Nominated members and members of a dissolved house cannot vote
+          </p>
+        </section>
+        <section class="mlavotevalue">
+          <h2>Value of MLA's vote</h2>
+          <p class="sub-lead">
+            The Value of an MLA’s vote is calculated based on the formula below
+          </p>
+          <div class="mlavotevalue__content">
+            <div id="tooltip"></div>
+            <div id="totMLAValue">
+              <p>total vote value of MLA's in India</p>
+              <span>549,495</span>
+            </div>
+            <div class="indiamap"></div>
+            <div class="mla-formula">
+              <h3>Formula</h3>
+              <img src="img/mla-formula.png" alt="" />
+            </div>
           </div>
-        </div>
-        <p class="electors-who__note">
-          * Nominated members and members of a dissolved house cannot vote
-        </p>
-      </section>
-      <section class="mlavotevalue">
-        <h2>Value of MLA's vote</h2>
-        <p class="sub-lead">
-          The Value of an MLA’s vote is calculated based on the formula below
-        </p>
-        <div class="indiamap"></div>
-        <div class="mp-formula">
-          <h3>Formula</h3>
-          <img src="img/mla-formula.png" alt="" />
-        </div>
-      </section>
-      <section class="mpvotevalue">
-        <h2>Value of MP's vote</h2>
-        <p class="sub-lead">
-          The Value of an MP’s vote is calculated based on the formula below
-        </p>
-        <div class="rajyasabha">
-          <h3>Rajya Sabha</h3>
-          <ul>
-            <li>No of Seats <span id="rsNoSeats">158</span></li>
-            <li>Value of Each MP <span id="rsNoSeats">158</span></li>
-            <li>Total value <span id="rsNoSeats">158</span></li>
-          </ul>
-        </div>
-        <div class="rajyasabha">
-          <h3>Lok Sabha</h3>
-          <ul>
-            <li>No of Seats <span id="lsNoSeats">158</span></li>
-            <li>Value of Each MP <span id="lsNoSeats">158</span></li>
-            <li>Total value <span id="lsNoSeats">158</span></li>
-          </ul>
-        </div>
-        <div class="mp-formula">
-          <h3>Formula</h3>
-          <img src="img/mp-formula.png" alt="" />
-        </div>
-        <div class="total-value">
-          <p>Total value of MP's in India</p>
-          <span id="totValueMP">549,495</span>
-        </div>
-      </section>
-      <section class="mpvotevalue">
-        <h2>The voting process</h2>
-        <p class="sub-lead">
-          The voting is based on single transferable vote. The legislators mark
-          their order of preference on the ballot paper and then vote.
-        </p>
-      </section>
+        </section>
+        <section class="mpvotevalue">
+          <h2>Value of MP's vote</h2>
+          <p class="sub-lead">
+            The Value of an MP’s vote is calculated based on the formula below
+          </p>
+          <div class="rajyasabha">
+            <h3>Rajya Sabha</h3>
+            <ul>
+              <li>No of Seats <span id="rsNoSeats">158</span></li>
+              <li>Value of Each MP <span id="rsNoSeats">158</span></li>
+              <li>Total value <span id="rsNoSeats">158</span></li>
+            </ul>
+          </div>
+          <div class="rajyasabha">
+            <h3>Lok Sabha</h3>
+            <ul>
+              <li>No of Seats <span id="lsNoSeats">158</span></li>
+              <li>Value of Each MP <span id="lsNoSeats">158</span></li>
+              <li>Total value <span id="lsNoSeats">158</span></li>
+            </ul>
+          </div>
+          <div class="mp-formula">
+            <h3>Formula</h3>
+            <img src="img/mp-formula.png" alt="" />
+          </div>
+          <div class="total-value">
+            <p>Total value of MP's in India</p>
+            <span id="totValueMP">549,495</span>
+          </div>
+        </section>
+        <section class="mpvotevalue">
+          <h2>The voting process</h2>
+          <p class="sub-lead">
+            The voting is based on single transferable vote. The legislators
+            mark their order of preference on the ballot paper and then vote.
+          </p>
+          <div class="ballotbox-animations">
+            <!-- <img src="img/ballotbox-animation.svg" alt="" /> -->
+            <object data="img/ballotbox-animation.svg"></object>
+          </div>
+          <p>
+            The candidate that polls 50% or above in the order of preference
+            wins the round. The least preferred candidate is first eliminated
+            and the votes are distributed to the other candidates based on
+            preference.
+          </p>
+          <div class="candidate-selection">
+            <!-- <img src="img/candidate-selection.svg" alt="" /> -->
+            <object data="img/candidate-selection.svg"></object>
+          </div>
+          <p>
+            The last candidate that makes the 50% cut-off wins and becomes the
+            President of India
+          </p>
+          <div class="ending">
+            <img src="img/blankface-color.png" alt="" />
+          </div>
+        </section>
+      </div>
     </div>
     <!--tv9-interactives-->
     <script src="js/d3.v4.min.js"></script>
     <script src="js/topojson.v2.min.js"></script>
+    <script src="js/d3-tip.js"></script>
     <script src="js/indiamap.js"></script>
-    scr
   </body>
 </html>

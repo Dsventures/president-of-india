@@ -16,6 +16,12 @@ section {
   margin: 100px 0px;
   box-sizing: border-box;
 }
+
+.boxwrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
 .cover {
   text-align: center;
   height: 100vh;
@@ -166,4 +172,43 @@ h2 {
   width: 85%;
   margin: 20px auto 20px auto;
   text-align: center;
+}
+
+.mlavotevalue__content {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.mla-formula {
+  position: absolute;
+  bottom: 95px;
+  width: 35%;
+  text-align: center;
+  right: 0;
+}
+.mla-formula h3 {
+  font-size: 15px;
+}
+
+#totMLAValue {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  text-align: center;
+}
+#totMLAValue p {
+  font-size: 16px;
+  line-height: 18px;
+}
+#totMLAValue span {
+  font-size: 36px;
+  margin-top: 10px;
+  color: red;
+  display: block;
+}
+
+.ending {
+  width: 60%;
+  margin: 50px auto;
 }

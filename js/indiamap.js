@@ -84,48 +84,46 @@ function drawIndiaMap(selector, type, dataformap) {
       });
   }
 
-  //   var tool_tip = d3
-  //     .tip()
-  //     .attr("class", "d3-tipforline")
-  //     .offset([-15, 0])
-  //     .html(function (d) {
-  //       var fd = _.filter(dataformap, function (items) {
-  //         return items.stateId === d.properties.ST_CODE;
-  //       });
-
-  //       var fdjk = _.filter(dataformap, function (items) {
-  //         return items.stateId === "U08";
-  //       });
-
-  //       var html;
-  //       html = "<p>" + d.properties.ST_NM + "</p> ";
-
-  //       if (fd[0] !== undefined) {
-  //         if (type === "cases") {
-  //           html +=
-  //             "<p>Total Confirmed Cases: <span>" +
-  //             parseInt(fd[0]["totalIndianCases"]).toLocaleString("en-IN") +
-  //             "</span></p>";
-  //         } else if (type === "vaccine") {
-  //           html +=
-  //             "<p>Total Doses: <span>" +
-  //             parseInt(fd[0]["total_doses"]).toLocaleString("en-IN") +
-  //             "</span></p>";
-  //         }
-  //         return html;
-  //       } else {
-  //         if (type === "cases") {
-  //           html += "<p>Total Confirmed Cases: <span>-</span></p>";
-  //         } else if (type === "vaccine") {
-  //           html +=
-  //             "<p>Total Doses: <span>" +
-  //             parseInt(fd[0]["total_doses"]).toLocaleString("en-IN") +
-  //             "</span>-</p>";
-  //         }
-  //         return html;
-  //       }
-  //     });
-  //   svg.call(tool_tip);
+  var tool_tip = d3
+    .tip()
+    .attr("class", "d3-tipforline")
+    .offset([-15, 0])
+    .html(function (d) {
+      console.log(d.properties);
+      //       var fd = _.filter(dataformap, function (items) {
+      //         return items.stateId === d.properties.ST_CODE;
+      //       });
+      //       var fdjk = _.filter(dataformap, function (items) {
+      //         return items.stateId === "U08";
+      //       });
+      //       var html;
+      //       html = "<p>" + d.properties.ST_NM + "</p> ";
+      //       if (fd[0] !== undefined) {
+      //         if (type === "cases") {
+      //           html +=
+      //             "<p>Total Confirmed Cases: <span>" +
+      //             parseInt(fd[0]["totalIndianCases"]).toLocaleString("en-IN") +
+      //             "</span></p>";
+      //         } else if (type === "vaccine") {
+      //           html +=
+      //             "<p>Total Doses: <span>" +
+      //             parseInt(fd[0]["total_doses"]).toLocaleString("en-IN") +
+      //             "</span></p>";
+      //         }
+      //         return html;
+      //       } else {
+      //         if (type === "cases") {
+      //           html += "<p>Total Confirmed Cases: <span>-</span></p>";
+      //         } else if (type === "vaccine") {
+      //           html +=
+      //             "<p>Total Doses: <span>" +
+      //             parseInt(fd[0]["total_doses"]).toLocaleString("en-IN") +
+      //             "</span>-</p>";
+      //         }
+      //         return html;
+      //       }
+    });
+  svg.call(tool_tip);
   var g = svg.append("g");
   var projection = d3
     .geoMercator()
@@ -153,6 +151,8 @@ function drawIndiaMap(selector, type, dataformap) {
       })
       .attr("stroke", "#000000")
       .attr("stroke-width", 0.2)
-      .attr("fill", "#FFF");
+      .attr("fill", "#FFF")
+      .on("mouseover", tool_tip.show)
+      .on("mouseout", tool_tip.hide);
   });
 }
