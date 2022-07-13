@@ -29,7 +29,7 @@
         <img src="img/presidents.png" alt="" />
       </section>
       <div class="boxwrapper">
-        <section class="criteria">
+        <section class="criteria" id="criteria">
           <h2>Criteria for eligibility of becoming the President of India</h2>
           <div class="critieria__img">
             <img class="sizelg" src="img/blankface-2.png" alt="" />
@@ -39,13 +39,15 @@
             </div>
           </div>
           <div class="critieria__points">
-            <p style="display: none">Citizen of India</p>
-            <p style="display: none">Above 35 years of age</p>
-            <p style="display: block">
+            <p class="criteria__point_pt1">Citizen of India</p>
+            <p class="criteria__point_pt2">Above 35 years of age</p>
+            <p class="criteria__point_pt3">
               50 electors to propose; another 50 to second it
             </p>
-            <p style="display: none">Should not hold any office of profit</p>
-            <p style="display: none">Other eligibilities same as an MP</p>
+            <p class="criteria__point_pt4">
+              Should not hold any office of profit
+            </p>
+            <p class="criteria__point_pt5">Other eligibilities same as an MP</p>
           </div>
         </section>
         <section class="electors">
@@ -83,6 +85,23 @@
               <p>total vote value of MLA's in India</p>
               <span>549,495</span>
             </div>
+            <!-- <div class="tooltip__content">
+              <p>Rajasthan</p>
+              <ul>
+                <li>
+                  No of<br />
+                  Seats <span id="noSeats">403</span>
+                </li>
+                <li>
+                  Value of <br />each MLA
+                  <span id="eachMLAVal">208</span>
+                </li>
+                <li>
+                  Total value<br />
+                  of state <span id="stateTotVal">83,824</span>
+                </li>
+              </ul>
+            </div> -->
             <div class="indiamap"></div>
             <div class="mla-formula">
               <h3>Formula</h3>
@@ -151,9 +170,13 @@
       </div>
     </div>
     <!--tv9-interactives-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js"></script>
     <script src="js/d3.v4.min.js"></script>
     <script src="js/topojson.v2.min.js"></script>
     <script src="js/d3-tip.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/indiamap.js"></script>
+    <script src="/js/scroll-app.js"></script>
   </body>
 </html>
