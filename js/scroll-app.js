@@ -71,7 +71,7 @@ var pinCriteria = ScrollTrigger.create({
 
 var timlineElectors = gsap.timeline();
 
-timlineElectors.from(".electors-who__one", { opacity: 0 }, "one-0");
+timlineElectors.from(".electors-who__one", { delay: 1, opacity: 0 }, "one-0");
 
 timlineElectors.from(".electors-who__two", { opacity: 0 }, "two-0");
 
