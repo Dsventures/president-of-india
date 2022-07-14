@@ -355,21 +355,21 @@ h2 {
 }
 @media (max-width: 600px) {
   .cover img:first-child {
-    width: 40%;
-    left: -50px;
+    width: 46%;
+    left: -66px;
   }
   .cover img:nth-child(2) {
-    width: 70%;
-    left: 6%;
-    bottom: -46px;
+    width: 80%;
+    left: 3%;
+    bottom: -60px;
   }
   .cover img:nth-child(3) {
-    width: 70%;
-    left: 30%;
-    bottom: -38px;
+    width: 80%;
+    left: 25%;
+    bottom: -51px;
   }
   .cover img:nth-child(4) {
-    width: 52%;
+    width: 56%;
     left: 63%;
     bottom: -50px;
   }
@@ -377,7 +377,7 @@ h2 {
     max-width: 100%;
   }
   .president-imgs {
-    height: 240px;
+    height: 281px;
   }
 }
 
