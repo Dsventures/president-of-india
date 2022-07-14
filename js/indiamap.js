@@ -20,10 +20,12 @@ document
     document.getElementById("tooltip").style.marginTop = "-148px";
     document.getElementById("tooltip").style.display = "block";
     document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
-    document.getElementById("noSeatsMob").innerHTML = fd[0]["noSeatsLAS"];
-    document.getElementById("eachMLAValMob").innerHTML = fd[0]["eachMLAVal"];
+    document.getElementById("noSeatsMob").innerHTML =
+      fd[0]["noSeatsLAS"].toLocaleString("en-IN");
+    document.getElementById("eachMLAValMob").innerHTML =
+      fd[0]["eachMLAVal"].toLocaleString("en-IN");
     document.getElementById("stateTotValMob").innerHTML =
-      fd[0]["totalValState"];
+      fd[0]["totalValState"].toLocaleString("en-IN");
   });
 // alert("test");
 
@@ -97,19 +99,19 @@ function drawIndiaMap(selector, type, dataformap) {
       html += "    <li>";
       html +=
         '        No of<br /> Seats <span id="noSeats"> ' +
-        fd[0]["noSeatsLAS"] +
+        fd[0]["noSeatsLAS"].toLocaleString("en-IN") +
         "</span>";
       html += "    </li>";
       html += "    <li>";
       html +=
         '        Value of <br />each MLA <span id="eachMLAVal">' +
-        fd[0]["eachMLAVal"] +
+        fd[0]["eachMLAVal"].toLocaleString("en-IN") +
         "</span>";
       html += "   </li>";
       html += "    <li>";
       html +=
         '        Total value<br /> of state <span id="stateTotVal">' +
-        fd[0]["totalValState"] +
+        fd[0]["totalValState"].toLocaleString("en-IN") +
         "</span>";
       html += "    </li>";
       html += "    </ul>";
@@ -240,11 +242,12 @@ function drawIndiaMap(selector, type, dataformap) {
         document.getElementById("tooltip").style.marginTop = "-148px";
         document.getElementById("tooltip").style.display = "block";
         document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
-        document.getElementById("noSeatsMob").innerHTML = fd[0]["noSeatsLAS"];
+        document.getElementById("noSeatsMob").innerHTML =
+          fd[0]["noSeatsLAS"].toLocaleString("en-IN");
         document.getElementById("eachMLAValMob").innerHTML =
-          fd[0]["eachMLAVal"];
+          fd[0]["eachMLAVal"].toLocaleString("en-IN");
         document.getElementById("stateTotValMob").innerHTML =
-          fd[0]["totalValState"];
+          fd[0]["totalValState"].toLocaleString("en-IN");
       });
     }
   });
