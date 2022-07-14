@@ -355,22 +355,22 @@ h2 {
 }
 @media (max-width: 600px) {
   .cover img:first-child {
-    width: 46%;
-    left: -66px;
+    width: 48%;
+    left: -76px;
   }
   .cover img:nth-child(2) {
-    width: 80%;
+    width: 85%;
     left: 3%;
-    bottom: -60px;
+    bottom: -46px;
   }
   .cover img:nth-child(3) {
-    width: 80%;
-    left: 25%;
+    width: 83%;
+    left: 24%;
     bottom: -51px;
   }
   .cover img:nth-child(4) {
-    width: 56%;
-    left: 63%;
+    width: 59%;
+    left: 59%;
     bottom: -50px;
   }
   #tooltip.tooltip__content {
