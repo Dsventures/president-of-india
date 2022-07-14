@@ -348,6 +348,9 @@ h2 {
   top: 5px;
   right: 52px;
 }
+.marker.active {
+  fill: #f00 !important;
+}
 @media (max-width: 600px) {
   .cover img:first-child {
     width: 40%;
@@ -421,5 +424,9 @@ h2 {
   }
   section {
     margin: 500px 0px;
+  }
+
+  #dropdownState {
+    display: none;
   }
 }

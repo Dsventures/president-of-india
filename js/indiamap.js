@@ -1,4 +1,5 @@
 document.getElementById("closeBtn").addEventListener("click", function () {
+  d3.selectAll(".marker").classed("active", false);
   document.getElementById("mapIndia").style.marginTop = "0";
   document.getElementById("tooltip").style.marginTop = "0";
   document.getElementById("tooltip").style.display = "none";
@@ -13,7 +14,8 @@ document
     var fd = mlaData.filter(function (itm) {
       return itm.stateCode == selVal;
     });
-    // console.log(fd);
+    d3.selectAll(".marker").classed("active", false);
+    document.getElementById(selVal).classList.add("active");
     document.getElementById("mapIndia").style.marginTop = "160px";
     document.getElementById("tooltip").style.marginTop = "-148px";
     document.getElementById("tooltip").style.display = "block";
@@ -215,6 +217,10 @@ function drawIndiaMap(selector, type, dataformap) {
         );
       })
       .append("path")
+      .attr("class", "marker")
+      .attr("id", function (d) {
+        return d[1];
+      })
       .attr("d", marker)
       .style("fill", "#69b3a2");
 
@@ -227,6 +233,8 @@ function drawIndiaMap(selector, type, dataformap) {
         var fd = mlaData.filter(function (itm) {
           return itm.stateCode === d[1];
         });
+        d3.selectAll(".marker").classed("active", false);
+        document.getElementById(d[1]).classList.add("active");
         document.getElementById("mapIndia").style.marginTop = "160px";
         document.getElementById("tooltip").style.marginTop = "-148px";
         document.getElementById("tooltip").style.display = "block";
