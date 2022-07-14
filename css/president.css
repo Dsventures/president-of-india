@@ -22,6 +22,8 @@ section {
   max-width: 960px;
   margin: 0 auto;
 }
+
+/* Cover Content  */
 .cover {
   text-align: center;
   height: 100vh;
@@ -46,7 +48,13 @@ section {
 .cover img {
   position: absolute;
   bottom: 0;
+}
+
+.president-imgs {
   width: 100%;
+  height: 169px;
+  overflow: hidden;
+  position: relative;
 }
 
 h2 {
@@ -255,4 +263,60 @@ h2 {
   font-weight: 600;
   font-size: 26px;
   margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .cover img:first-child {
+    width: 35%;
+    left: -42px;
+  }
+  .cover img:nth-child(2) {
+    width: 64%;
+    left: 8%;
+    bottom: -46px;
+  }
+  .cover img:nth-child(3) {
+    width: 60%;
+    left: 36%;
+    bottom: -38px;
+  }
+  .cover img:nth-child(4) {
+    width: 45%;
+    left: 68%;
+    bottom: -50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover h1,
+  .cover p {
+    margin: 0 auto 30px auto;
+    width: 50%;
+  }
+  .president-imgs {
+    width: 100%;
+    height: 606px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+  }
+  .cover img:first-child {
+    width: 22%;
+    left: 0;
+  }
+  .cover img:nth-child(2) {
+    width: 41%;
+    left: 17%;
+    bottom: -120px;
+  }
+  .cover img:nth-child(3) {
+    width: 41%;
+    left: 41%;
+    bottom: -120px;
+  }
+  .cover img:nth-child(4) {
+    width: 28%;
+    left: 74%;
+    bottom: -75px;
+  }
 }
