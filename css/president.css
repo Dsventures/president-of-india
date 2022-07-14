@@ -227,8 +227,8 @@ h2 {
 #totMLAValue {
   width: 50%;
   position: absolute;
-  right: 0;
-  top: 20px;
+  right: 20px;
+  top: 41px;
   text-align: center;
 }
 #totMLAValue p {
@@ -341,6 +341,12 @@ h2 {
   right: 15px;
   top: 10px;
   z-index: 2000;
+}
+
+#dropdownState {
+  position: absolute;
+  top: 5px;
+  right: 52px;
 }
 @media (max-width: 600px) {
   .cover img:first-child {

@@ -1,3 +1,30 @@
+document.getElementById("closeBtn").addEventListener("click", function () {
+  document.getElementById("mapIndia").style.marginTop = "0";
+  document.getElementById("tooltip").style.marginTop = "0";
+  document.getElementById("tooltip").style.display = "none";
+});
+
+document
+  .getElementById("dropdownState")
+  .addEventListener("change", function () {
+    // console.log(typeof this.value);
+    var selVal = document.getElementById("dropdownState").value;
+    // console.log(mlaData);
+    var fd = mlaData.filter(function (itm) {
+      return itm.stateCode == selVal;
+    });
+    // console.log(fd);
+    document.getElementById("mapIndia").style.marginTop = "160px";
+    document.getElementById("tooltip").style.marginTop = "-148px";
+    document.getElementById("tooltip").style.display = "block";
+    document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
+    document.getElementById("noSeatsMob").innerHTML = fd[0]["noSeatsLAS"];
+    document.getElementById("eachMLAValMob").innerHTML = fd[0]["eachMLAVal"];
+    document.getElementById("stateTotValMob").innerHTML =
+      fd[0]["totalValState"];
+  });
+// alert("test");
+
 drawIndiaMap(".indiamap", "cases", []);
 
 var marker =
@@ -211,9 +238,3 @@ function drawIndiaMap(selector, type, dataformap) {
     }
   });
 }
-
-document.getElementById("closeBtn").on("click", function () {
-  document.getElementById("mapIndia").style.marginTop = "0";
-  document.getElementById("tooltip").style.marginTop = "0";
-  document.getElementById("tooltip").style.display = "none";
-});
