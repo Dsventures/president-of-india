@@ -62,7 +62,7 @@ function drawIndiaMap(selector, type, dataformap) {
       console.log(fd[0]);
       console.log(fd[0]["noSeatsLAS"]);
       var html = '<div class="tooltip__content">';
-      html += "    <p>Rajasthan</p>";
+      html += "    <p>" + fd[0]["stateName"] + "</p>";
       html += "    <ul>";
       html += "    <li>";
       html +=
@@ -169,7 +169,10 @@ function drawIndiaMap(selector, type, dataformap) {
       })
       .attr("stroke", "#000000")
       .attr("stroke-width", 0.2)
-      .attr("fill", "#FFF");
+      .attr("fill", "#FFF")
+      .on("click", function (d, i) {
+        console.log(d);
+      });
 
     var planes = svg
       .selectAll(".marker")
@@ -184,8 +187,8 @@ function drawIndiaMap(selector, type, dataformap) {
       })
       .append("path")
       .attr("d", marker)
-      .style("fill", "#69b3a2")
-      .on("mouseover", tool_tip.show)
-      .on("mouseout", tool_tip.hide);
+      .style("fill", "#69b3a2");
+
+    planes.on("mouseover", tool_tip.show).on("mouseout", tool_tip.hide);
   });
 }
