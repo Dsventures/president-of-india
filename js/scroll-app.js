@@ -5,7 +5,7 @@ var pinOpening = ScrollTrigger.create({
   pin: false,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   toggleClass: { targets: "#cover", className: "is-active" },
   markers: false,
 });
@@ -55,7 +55,7 @@ var pinCriteria = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   pinSpacing: true,
   toggleClass: { targets: "#criteria", className: "is-active" },
   markers: false,
@@ -77,7 +77,7 @@ var pinElectors = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   pinSpacing: true,
   toggleClass: { targets: ".electors", className: "is-active" },
   markers: false,
@@ -102,13 +102,18 @@ var pinMP = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   pinSpacing: true,
   toggleClass: { targets: ".mpvotevalue", className: "is-active" },
   markers: false,
 });
 
 var timlineBallotBox = gsap.timeline();
+
+timlineBallotBox
+  .from("#candname3", { opacity: 0 }, "zero-2")
+  .from("#candname2", { opacity: 0 }, "zero-1")
+  .from("#candname1", { opacity: 0 }, "zero-0");
 
 timlineBallotBox
   .from("#pref1", { opacity: 0 }, "one-0")
@@ -137,7 +142,7 @@ var pinBallotBox = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess1", className: "is-active" },
   markers: false,
@@ -145,9 +150,9 @@ var pinBallotBox = ScrollTrigger.create({
 
 var timlineCandSelect = gsap.timeline();
 
-timlineCandSelect.to("#cand1-group", { opacity: 1 }, "zero-0");
-timlineCandSelect.to("#cand2-group", { opacity: 1 }, "zero-0");
-timlineCandSelect.to("#cand3-group", { opacity: 1 }, "zero-0");
+timlineCandSelect.from("#cand1-group", { opacity: 0 }, "zero-0");
+timlineCandSelect.from("#cand2-group", { opacity: 0 }, "zero-1");
+timlineCandSelect.from("#cand3-group", { opacity: 0 }, "zero-2");
 
 timlineCandSelect.from("#eliminated3", { opacity: 0 }, "one-0");
 
@@ -167,23 +172,22 @@ timlineCandSelect.to("#cand1-group", { scale: 1.1 }, "four-0");
 timlineCandSelect.to("#cand2-group", { scale: 1.1, y: 100 }, "four-0");
 
 timlineCandSelect.from("#eliminated2", { opacity: 0 }, "four-0");
+timlineCandSelect.to("#eliminated2", { opacity: 1 }, "four-2");
 
-timlineCandSelect.to(
-  "#cand2-group",
-  { scale: 1.1, y: 100, opacity: 0 },
-  "five-0"
-);
+timlineCandSelect
+  .to("#cand2-group", { scale: 1.1, y: 100, opacity: 1 }, "five-0")
+  .to("#cand2-group", { scale: 1.1, y: 100, opacity: 0 }, "five-2");
 
-timlineCandSelect.to("#cand1-group", { scale: 1.3, y: 150 }, "five-0");
+timlineCandSelect.to("#cand1-group", { scale: 1.3, y: 150 }, "five-3");
 
-var pinBallotBox = ScrollTrigger.create({
+var pinCandSelect = ScrollTrigger.create({
   animation: timlineCandSelect,
   trigger: "#votingProcess2",
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=400%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess2", className: "is-active" },
-  markers: false,
+  markers: true,
 });
