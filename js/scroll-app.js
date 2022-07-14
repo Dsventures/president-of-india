@@ -7,7 +7,7 @@ var pinBallotBox = ScrollTrigger.create({
   start: "top 100px",
   end: "+=600%",
   toggleClass: { targets: "#cover", className: "is-active" },
-  markers: true,
+  markers: false,
 });
 
 var timlineCriteria = gsap.timeline();
@@ -80,13 +80,6 @@ timlineBallotBox
     { scale: "0.1", x: "225px", y: "300px", opacity: 0 },
     "four-3"
   );
-// timlineBallotBox
-//   .from(
-//     "#arrow",
-//     { opacity: 0, rotate: -45, transformOrigin: "50% 50%" },
-//     "four-0"
-//   )
-//   .to("#arrow", { opacity: 1 }, "four-1");
 
 var pinBallotBox = ScrollTrigger.create({
   animation: timlineBallotBox,
@@ -97,5 +90,45 @@ var pinBallotBox = ScrollTrigger.create({
   end: "+=600%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess1", className: "is-active" },
+  markers: false,
+});
+
+var timlineCandSelect = gsap.timeline();
+
+timlineCandSelect.from("#eliminated3", { opacity: 0 }, "one-0");
+
+timlineCandSelect.to("#cand3-group", { opacity: 0 }, "two-0");
+
+// timlineCandSelect.to("#bar21", { width: 180 }, "three-0");
+timlineCandSelect.to("#bar22", { x: 0, width: 100 }, "three-0");
+timlineCandSelect.to("#bar23", { x: 20, width: 50 }, "three-0");
+timlineCandSelect.to("#bar11", { width: 190 }, "three-0");
+timlineCandSelect.to("#bar12", { x: 20, width: 80 }, "three-0");
+timlineCandSelect.to("#bar13", { x: 20, width: 50 }, "three-0");
+
+timlineCandSelect.to("#cand1-group", { scale: 1.1 }, "four-0");
+
+timlineCandSelect.to("#cand2-group", { scale: 1.1, y: 100 }, "four-0");
+
+timlineCandSelect.from("#eliminated2", { opacity: 0 }, "four-0");
+
+timlineCandSelect.to(
+  "#cand2-group",
+  { scale: 1.1, y: 100, opacity: 0 },
+  "five-0"
+);
+
+timlineCandSelect.to("#cand1-group", { scale: 1.2, y: 150 }, "five-0");
+timlineCandSelect.to("#cand1-group", { scale: 1.2, y: 150 }, "five-0");
+
+var pinBallotBox = ScrollTrigger.create({
+  animation: timlineCandSelect,
+  trigger: "#votingProcess2",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=600%",
+  pinSpacing: true,
+  toggleClass: { targets: "#votingProcess2", className: "is-active" },
   markers: false,
 });
