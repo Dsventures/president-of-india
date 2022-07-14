@@ -1,5 +1,5 @@
 var timlineOpening = gsap.timeline();
-var pinBallotBox = ScrollTrigger.create({
+var pinOpening = ScrollTrigger.create({
   animation: timlineOpening,
   trigger: "#cover",
   pin: false,
@@ -10,12 +10,15 @@ var pinBallotBox = ScrollTrigger.create({
   markers: false,
 });
 
+// Section: Criteria
+
 var timlineCriteria = gsap.timeline();
 
 timlineCriteria
   .from("#mainCand", { opacity: 0, y: "-50px" }, "one-0")
   .from("#mainCand1", { opacity: 0, x: "50px" }, "one-0")
-  .from("#mainCand2", { opacity: 0, x: "-50px" }, "one-0");
+  .from("#mainCand2", { opacity: 0, x: "-50px" }, "one-0")
+  .from(".critieria__points", { opacity: 0 }, "one-0");
 
 timlineCriteria
   .from(".criteria__point_pt1", { opacity: 0 }, "one-0")
@@ -58,6 +61,53 @@ var pinCriteria = ScrollTrigger.create({
   markers: false,
 });
 
+// ==================================
+// Section: Electors
+// ==================================
+
+var timlineElectors = gsap.timeline();
+
+timlineElectors.from(".electors-who__one", { opacity: 0 }, "one-0");
+
+timlineElectors.from(".electors-who__two", { opacity: 0 }, "two-0");
+
+var pinElectors = ScrollTrigger.create({
+  animation: timlineElectors,
+  trigger: ".electors",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=600%",
+  pinSpacing: true,
+  toggleClass: { targets: ".electors", className: "is-active" },
+  markers: false,
+});
+
+// mlavotevalue
+
+var pinMla = ScrollTrigger.create({
+  trigger: ".mlavotevalue",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=600%",
+  pinSpacing: true,
+  toggleClass: { targets: ".mlavotevalue", className: "is-active" },
+  markers: false,
+});
+// mpvotevalue
+
+var pinMP = ScrollTrigger.create({
+  trigger: ".mpvotevalue",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=600%",
+  pinSpacing: true,
+  toggleClass: { targets: ".mpvotevalue", className: "is-active" },
+  markers: false,
+});
+
 var timlineBallotBox = gsap.timeline();
 
 timlineBallotBox
@@ -95,9 +145,15 @@ var pinBallotBox = ScrollTrigger.create({
 
 var timlineCandSelect = gsap.timeline();
 
+timlineCandSelect.to("#cand1-group", { opacity: 1 }, "zero-0");
+timlineCandSelect.to("#cand2-group", { opacity: 1 }, "zero-0");
+timlineCandSelect.to("#cand3-group", { opacity: 1 }, "zero-0");
+
 timlineCandSelect.from("#eliminated3", { opacity: 0 }, "one-0");
 
-timlineCandSelect.to("#cand3-group", { opacity: 0 }, "two-0");
+timlineCandSelect.to("#candidate3", { opacity: 0 }, "two-0");
+timlineCandSelect.to("#eliminated3", { opacity: 0 }, "two-0");
+timlineCandSelect.to("#Bar3", { y: -150, opacity: 0 }, "three-0");
 
 // timlineCandSelect.to("#bar21", { width: 180 }, "three-0");
 timlineCandSelect.to("#bar22", { x: 0, width: 100 }, "three-0");
