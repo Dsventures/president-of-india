@@ -154,35 +154,77 @@ var pinBallotBox = ScrollTrigger.create({
 
 var timlineCandSelect = gsap.timeline();
 
-timlineCandSelect.from("#cand1-group", { opacity: 0 }, "zero-0");
-timlineCandSelect.from("#cand2-group", { opacity: 0 }, "zero-1");
-timlineCandSelect.from("#cand3-group", { opacity: 0 }, "zero-2");
+timlineCandSelect
+  .from("#cand1", { opacity: 0 }, "zero-0")
+  .from("#candtxt1", { opacity: 0 }, "zero-0");
 
-timlineCandSelect.from("#eliminated3", { opacity: 0 }, "one-0");
+timlineCandSelect
+  .from("#cand2", { opacity: 0 }, "zero-1")
+  .from("#candtxt2", { opacity: 0 }, "zero-1");
 
-timlineCandSelect.to("#candidate3", { opacity: 0 }, "two-0");
-timlineCandSelect.to("#eliminated3", { opacity: 0 }, "two-0");
-timlineCandSelect.to("#Bar3", { y: -150, opacity: 0 }, "three-0");
+timlineCandSelect
+  .from("#cand3", { opacity: 0 }, "zero-2")
+  .from("#candtxt3", { opacity: 0 }, "zero-2");
 
-// timlineCandSelect.to("#bar21", { width: 180 }, "three-0");
-timlineCandSelect.to("#bar22", { x: 0, width: 100 }, "three-0");
-timlineCandSelect.to("#bar23", { x: 20, width: 50 }, "three-0");
-timlineCandSelect.to("#bar11", { width: 190 }, "three-0");
-timlineCandSelect.to("#bar12", { x: 20, width: 80 }, "three-0");
-timlineCandSelect.to("#bar13", { x: 20, width: 50 }, "three-0");
+timlineCandSelect
+  .from("#Bar1", { opacity: 0 }, "one-0")
+  .from("#Bar2", { opacity: 0 }, "one-1")
+  .from("#Bar3", { opacity: 0 }, "one-2");
 
-timlineCandSelect.to("#cand1-group", { scale: 1.1 }, "four-0");
+timlineCandSelect.from("#cuttoff-50", { opacity: 0 }, "one-3");
+
+timlineCandSelect.from("#eliminated3", { opacity: 0 }, "two-0");
+
+timlineCandSelect.to("#cand3", { opacity: 0 }, "two-1");
+timlineCandSelect.to("#eliminated3", { opacity: 0 }, "two-1");
+timlineCandSelect.to("#candtxt3", { opacity: 0 }, "two-1");
+timlineCandSelect.to("#Bar3", { y: -150, opacity: 0 }, "two-1");
+timlineCandSelect.to("#bar22", { x: 0, width: 100 }, "two-1");
+timlineCandSelect.to("#bar23", { x: 20, width: 50 }, "two-1");
+timlineCandSelect.to("#bar11", { width: 190 }, "two-1");
+timlineCandSelect.to("#bar12", { x: 20, width: 80 }, "two-1");
+timlineCandSelect.to("#bar13", { x: 20, width: 50 }, "two-1");
+
+// timlineCandSelect.from("#cand1-group", { opacity: 0 }, "zero-0");
+// timlineCandSelect.from("#cand2-group", { opacity: 0 }, "zero-1");
+// timlineCandSelect.from("#cand3-group", { opacity: 0 }, "zero-2");
+
+// timlineCandSelect.from("#Bar1", { opacity: 0 }, "one-0");
+// timlineCandSelect.from("#Bar2", { opacity: 0 }, "one-0");
+// timlineCandSelect.from("#Bar3", { opacity: 0 }, "one-0");
+// timlineCandSelect.from("#cuttoff-50", { opacity: 0 }, "one-0");
+// timlineCandSelect.from("#eliminated3", { opacity: 0 }, "one-0");
+
+// timlineCandSelect.to("#candidate3", { opacity: 0 }, "two-0");
+// timlineCandSelect.to("#eliminated3", { opacity: 0 }, "two-0");
+// timlineCandSelect.to("#Bar3", { y: -150, opacity: 0 }, "three-0");
+
+// // timlineCandSelect.to("#bar21", { width: 180 }, "three-0");
+// timlineCandSelect.to("#bar22", { x: 0, width: 100 }, "three-0");
+// timlineCandSelect.to("#bar23", { x: 20, width: 50 }, "three-0");
+// timlineCandSelect.to("#bar11", { width: 190 }, "three-0");
+// timlineCandSelect.to("#bar12", { x: 20, width: 80 }, "three-0");
+// timlineCandSelect.to("#bar13", { x: 20, width: 50 }, "three-0");
+
+timlineCandSelect.to("#cand1-group", { scale: 1.1, y: 50 }, "four-0");
 
 timlineCandSelect.to("#cand2-group", { scale: 1.1, y: 100 }, "four-0");
 
-timlineCandSelect.from("#eliminated2", { opacity: 0 }, "four-0");
-timlineCandSelect.to("#eliminated2", { opacity: 1 }, "four-2");
+timlineCandSelect.from("#eliminated2", { delay: 1, opacity: 0 }, "five-0");
 
-timlineCandSelect
-  .to("#cand2-group", { scale: 1.1, y: 100, opacity: 1 }, "five-0")
-  .to("#cand2-group", { scale: 1.1, y: 100, opacity: 0 }, "five-2");
+timlineCandSelect.to("#cand2-group", { delay: 1, opacity: 0 }, "five-1");
 
-timlineCandSelect.to("#cand1-group", { scale: 1.3, y: 150 }, "five-3");
+timlineCandSelect.to("#cand1-group", { scale: 1.3, x: -50, y: 100 }, "five-2");
+
+timlineCandSelect.to("#cuttoff-50", { opacity: 0 }, "five-2");
+
+// timlineCandSelect.to("#eliminated2", { opacity: 1 }, "four-2");
+
+// timlineCandSelect
+//   .to("#cand2-group", { scale: 1.1, y: 100, opacity: 1 }, "five-0")
+//   .to("#cand2-group", { scale: 1.1, y: 100, opacity: 0 }, "five-2");
+
+// timlineCandSelect.to("#cand1-group", { scale: 1.3, y: 150 }, "five-3");
 
 var pinCandSelect = ScrollTrigger.create({
   animation: timlineCandSelect,
