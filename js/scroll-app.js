@@ -18,33 +18,37 @@ timlineCriteria
   .from("#mainCand", { opacity: 0, y: "-50px" }, "one-0")
   .from("#mainCand1", { opacity: 0, x: "50px" }, "one-0")
   .from("#mainCand2", { opacity: 0, x: "-50px" }, "one-0")
-  .from(".critieria__points", { opacity: 0 }, "one-0");
+  .from(".critieria__points", { opacity: 0 }, "one-1");
 
 timlineCriteria
-  .from(".criteria__point_pt1", { opacity: 0 }, "one-0")
-  .to(".criteria__point_pt1", { opacity: 1 }, "one-1")
-  .to(".criteria__point_pt1", { opacity: 1 }, "one-2")
-  .to(".criteria__point_pt1", { opacity: 0 }, "one-3");
+  .from(".criteria__point_pt1", { opacity: 0 }, "one-2")
+  .to(".criteria__point_pt1", { opacity: 1 }, "one-3")
+  .to(".criteria__point_pt1", { opacity: 1 }, "one-4")
+  .to(".criteria__point_pt1", { opacity: 0 }, "one-5");
 
 timlineCriteria
+  .to(".critieria__points", { backgroundColor: "#B2C8DF" }, "two-0")
   .from(".criteria__point_pt2", { opacity: 0 }, "two-0")
   .to(".criteria__point_pt2", { opacity: 1 }, "two-1")
   .to(".criteria__point_pt2", { opacity: 1 }, "two-2")
   .to(".criteria__point_pt2", { opacity: 0 }, "two-3");
 
 timlineCriteria
+  .to(".critieria__points", { backgroundColor: "#C9BBCF" }, "three-0")
   .from(".criteria__point_pt3", { opacity: 0 }, "three-0")
   .to(".criteria__point_pt3", { opacity: 1 }, "three-1")
   .to(".criteria__point_pt3", { opacity: 1 }, "three-2")
   .to(".criteria__point_pt3", { opacity: 0 }, "three-3");
 
 timlineCriteria
+  .to(".critieria__points", { backgroundColor: "#90C8AC" }, "four-0")
   .from(".criteria__point_pt4", { opacity: 0 }, "four-0")
   .to(".criteria__point_pt4", { opacity: 1 }, "four-1")
   .to(".criteria__point_pt4", { opacity: 1 }, "four-2")
   .to(".criteria__point_pt4", { opacity: 0 }, "four-3");
 
 timlineCriteria
+  .to(".critieria__points", { backgroundColor: "#DEB6AB" }, "five-0")
   .from(".criteria__point_pt5", { opacity: 0 }, "five-0")
   .to(".criteria__point_pt5", { opacity: 1 }, "five-1")
   .to(".criteria__point_pt5", { opacity: 1 }, "five-2");
@@ -55,7 +59,7 @@ var pinCriteria = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=400%",
+  end: "+=300%",
   pinSpacing: true,
   toggleClass: { targets: "#criteria", className: "is-active" },
   markers: false,
@@ -77,7 +81,7 @@ var pinElectors = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=400%",
+  end: "+=200%",
   pinSpacing: true,
   toggleClass: { targets: ".electors", className: "is-active" },
   markers: false,
@@ -90,7 +94,7 @@ var pinMla = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=100%",
   pinSpacing: true,
   toggleClass: { targets: ".mlavotevalue", className: "is-active" },
   markers: false,
@@ -102,7 +106,7 @@ var pinMP = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=400%",
+  end: "+=100%",
   pinSpacing: true,
   toggleClass: { targets: ".mpvotevalue", className: "is-active" },
   markers: false,
@@ -142,7 +146,7 @@ var pinBallotBox = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=400%",
+  end: "+=600%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess1", className: "is-active" },
   markers: false,
@@ -186,7 +190,7 @@ var pinCandSelect = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=400%",
+  end: "+=600%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess2", className: "is-active" },
   markers: true,
