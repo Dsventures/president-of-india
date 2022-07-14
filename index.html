@@ -93,12 +93,28 @@
             The Value of an MLA’s vote is calculated based on the formula below
           </p>
           <div class="mlavotevalue__content">
-            <div id="tooltip"></div>
+            <div class="tooltip__content" id="tooltip" style="display: none">
+              <button id="closeBtn">x</button>
+              <p id="stateMob">Bihar</p>
+              <ul>
+                <li>
+                  No of<br />
+                  Seats <span id="noSeatsMob">243</span>
+                </li>
+                <li>
+                  Value of <br />each MLA <span id="eachMLAValMob">173</span>
+                </li>
+                <li>
+                  Total value<br />
+                  of state <span id="stateTotValMob">42,039</span>
+                </li>
+              </ul>
+            </div>
             <div id="totMLAValue">
               <p>total vote value of MLA's in India</p>
               <span>549,495</span>
             </div>
-            <div class="indiamap"></div>
+            <div class="indiamap" id="mapIndia"></div>
             <div class="mla-formula">
               <h3>Formula</h3>
               <img src="img/mla-formula.png" alt="" />
@@ -110,25 +126,29 @@
           <p class="sub-lead">
             The Value of an MP’s vote is calculated based on the formula below
           </p>
-          <div class="mp-formula">
-            <h3>Formula</h3>
-            <img src="img/mp-formula.png" alt="" />
-          </div>
-          <div class="rajyasabha">
-            <h3>Rajya Sabha</h3>
-            <ul>
-              <li>No of Seats <span id="rsNoSeats">233</span></li>
-              <li>Value of Each MP <span id="rsNoSeats">708</span></li>
-              <li>Total<br />value <span id="rsNoSeats">1,64,964</span></li>
-            </ul>
-          </div>
-          <div class="rajyasabha">
-            <h3>Lok Sabha</h3>
-            <ul>
-              <li>No of Seats <span id="lsNoSeats">543</span></li>
-              <li>Value of Each MP <span id="lsNoSeats">708</span></li>
-              <li>Total<br />value <span id="lsNoSeats">3,84,444</span></li>
-            </ul>
+          <div class="flexLayout">
+            <div class="mp-formula">
+              <h3>Formula</h3>
+              <img src="img/mp-formula.png" alt="" />
+            </div>
+            <div class="datasection">
+              <div class="rajyasabha">
+                <h3>Rajya Sabha</h3>
+                <ul>
+                  <li>No of Seats <span id="rsNoSeats">233</span></li>
+                  <li>Value of Each MP <span id="rsNoSeats">708</span></li>
+                  <li>Total<br />value <span id="rsNoSeats">1,64,964</span></li>
+                </ul>
+              </div>
+              <div class="rajyasabha">
+                <h3>Lok Sabha</h3>
+                <ul>
+                  <li>No of Seats <span id="lsNoSeats">543</span></li>
+                  <li>Value of Each MP <span id="lsNoSeats">708</span></li>
+                  <li>Total<br />value <span id="lsNoSeats">3,84,444</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="total-value">

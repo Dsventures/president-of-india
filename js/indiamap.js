@@ -169,10 +169,10 @@ function drawIndiaMap(selector, type, dataformap) {
       })
       .attr("stroke", "#000000")
       .attr("stroke-width", 0.2)
-      .attr("fill", "#FFF")
-      .on("click", function (d, i) {
-        console.log(d);
-      });
+      .attr("fill", "#FFF");
+    // .on("click", function (d, i) {
+    //   console.log(d);
+    // });
 
     var planes = svg
       .selectAll(".marker")
@@ -189,6 +189,31 @@ function drawIndiaMap(selector, type, dataformap) {
       .attr("d", marker)
       .style("fill", "#69b3a2");
 
-    planes.on("mouseover", tool_tip.show).on("mouseout", tool_tip.hide);
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+      planes.on("mouseover", tool_tip.show).on("mouseout", tool_tip.hide);
+    } else {
+      planes.on("click", function (d, i) {
+        console.log(d[1]);
+        var fd = mlaData.filter(function (itm) {
+          return itm.stateCode === d[1];
+        });
+        document.getElementById("mapIndia").style.marginTop = "160px";
+        document.getElementById("tooltip").style.marginTop = "-148px";
+        document.getElementById("tooltip").style.display = "block";
+        document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
+        document.getElementById("noSeatsMob").innerHTML = fd[0]["noSeatsLAS"];
+        document.getElementById("eachMLAValMob").innerHTML =
+          fd[0]["eachMLAVal"];
+        document.getElementById("stateTotValMob").innerHTML =
+          fd[0]["totalValState"];
+      });
+    }
   });
 }
+
+document.getElementById("closeBtn").on("click", function () {
+  document.getElementById("mapIndia").style.marginTop = "0";
+  document.getElementById("tooltip").style.marginTop = "0";
+  document.getElementById("tooltip").style.display = "none";
+});
