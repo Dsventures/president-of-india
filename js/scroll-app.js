@@ -214,7 +214,7 @@ var pinCandSelect = ScrollTrigger.create({
   pin: true,
   scrub: true,
   start: "top 100px",
-  end: "+=600%",
+  end: "+=700%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess2", className: "is-active" },
   markers: true,
