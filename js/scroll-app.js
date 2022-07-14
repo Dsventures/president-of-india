@@ -1,4 +1,21 @@
+var timlineOpening = gsap.timeline();
+var pinBallotBox = ScrollTrigger.create({
+  animation: timlineOpening,
+  trigger: "#cover",
+  pin: false,
+  scrub: true,
+  start: "top 100px",
+  end: "+=600%",
+  toggleClass: { targets: "#cover", className: "is-active" },
+  markers: true,
+});
+
 var timlineCriteria = gsap.timeline();
+
+timlineCriteria
+  .from("#mainCand", { opacity: 0, y: "-50px" }, "one-0")
+  .from("#mainCand1", { opacity: 0, x: "50px" }, "one-0")
+  .from("#mainCand2", { opacity: 0, x: "-50px" }, "one-0");
 
 timlineCriteria
   .from(".criteria__point_pt1", { opacity: 0 }, "one-0")
