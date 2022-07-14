@@ -80,6 +80,7 @@ function drawIndiaMap(selector, type, dataformap) {
   var tool_tip = d3
     .tip()
     .attr("class", "d3-tipforline")
+    .attr("id", "d3-tip")
     .offset([-150, 150])
     .html(function (d) {
       // console.log(d[1]);
@@ -115,6 +116,7 @@ function drawIndiaMap(selector, type, dataformap) {
       return html;
     });
   svg.call(tool_tip);
+
   var g = svg.append("g");
   var projection = d3
     .geoMercator()

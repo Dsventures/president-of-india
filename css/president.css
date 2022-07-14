@@ -211,7 +211,7 @@ h2 {
   width: 95%;
   margin: 0 auto;
   position: relative;
-  max-width: 500px;
+  max-width: 400px;
 }
 .mla-formula {
   position: absolute;
@@ -350,26 +350,29 @@ h2 {
 }
 @media (max-width: 600px) {
   .cover img:first-child {
-    width: 35%;
-    left: -42px;
+    width: 40%;
+    left: -50px;
   }
   .cover img:nth-child(2) {
-    width: 64%;
-    left: 8%;
+    width: 70%;
+    left: 6%;
     bottom: -46px;
   }
   .cover img:nth-child(3) {
-    width: 60%;
-    left: 36%;
+    width: 70%;
+    left: 30%;
     bottom: -38px;
   }
   .cover img:nth-child(4) {
-    width: 45%;
-    left: 68%;
+    width: 52%;
+    left: 63%;
     bottom: -50px;
   }
   #tooltip.tooltip__content {
     max-width: 100%;
+  }
+  .president-imgs {
+    height: 240px;
   }
 }
 
