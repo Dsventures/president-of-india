@@ -39,7 +39,7 @@ function drawIndiaMap(selector, type, dataformap) {
     height = 332,
     scale = 580,
     center = [82.8, 23.4];
-  var source = "map/india_2019.json";
+  var source = "/map/india_2019.json";
   d3.select(selector).html(null);
   var svg = d3
     .select(selector)
