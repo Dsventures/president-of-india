@@ -174,8 +174,7 @@ timlineCandSelect.to(
   "five-0"
 );
 
-timlineCandSelect.to("#cand1-group", { scale: 1.2, y: 150 }, "five-0");
-timlineCandSelect.to("#cand1-group", { scale: 1.2, y: 150 }, "five-0");
+timlineCandSelect.to("#cand1-group", { scale: 1.3, y: 150 }, "five-0");
 
 var pinBallotBox = ScrollTrigger.create({
   animation: timlineCandSelect,
