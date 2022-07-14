@@ -69,7 +69,7 @@ h2 {
 .sub-lead {
   text-align: center;
   width: 90%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 10px auto;
 }
 
 /* Criteria */
@@ -185,7 +185,7 @@ h2 {
 
 .mp-formula {
   width: 85%;
-  margin: 20px auto 20px auto;
+  margin: 0 auto 10px auto;
   text-align: center;
   /* background-color: #000; */
   padding: 10px;
@@ -203,7 +203,7 @@ h2 {
   padding: 2px 5px;
 }
 .mp-formula img {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
