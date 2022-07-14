@@ -56,19 +56,20 @@ timlineBallotBox
   .to("#pref3", { opacity: 1 }, "three-1");
 
 timlineBallotBox
-  .from(
-    "#arrow",
-    { opacity: 0, rotate: -45, transformOrigin: "50% 50%" },
-    "four-0"
-  )
-  .to("#arrow", { opacity: 1 }, "four-1");
-
-timlineBallotBox
-  .to("#votingSlip", { x: "400px" }, "five-0")
-  .to("#votingSlip", { scale: "0.7", x: "500px" }, "five-1")
-  .to("#votingSlip", { scale: "0.3", x: "500px", y: 120 }, "five-2")
-  .to("#votingSlip", { opacity: 0 }, "five-2");
-timlineBallotBox.to("#ballotBox", { x: "-350px" }, "five-0");
+  .to("#votingSlip", { scale: "0.5", x: "125px" }, "four-0")
+  .to("#votingSlip", { scale: "0.2", x: "200px" }, "four-2")
+  .to(
+    "#votingSlip",
+    { scale: "0.1", x: "225px", y: "300px", opacity: 0 },
+    "four-3"
+  );
+// timlineBallotBox
+//   .from(
+//     "#arrow",
+//     { opacity: 0, rotate: -45, transformOrigin: "50% 50%" },
+//     "four-0"
+//   )
+//   .to("#arrow", { opacity: 1 }, "four-1");
 
 var pinBallotBox = ScrollTrigger.create({
   animation: timlineBallotBox,
