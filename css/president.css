@@ -348,6 +348,8 @@ h2 {
   top: 5px;
   right: 52px;
 }
+
+.marker:hover,
 .marker.active {
   fill: #f00 !important;
 }
