@@ -234,6 +234,7 @@ function drawIndiaMap(selector, type, dataformap) {
           return itm.stateCode === d[1];
         });
         d3.selectAll(".marker").classed("active", false);
+        document.getElementById("dropdownState").value = d[1];
         document.getElementById(d[1]).classList.add("active");
         document.getElementById("mapIndia").style.marginTop = "160px";
         document.getElementById("tooltip").style.marginTop = "-148px";
