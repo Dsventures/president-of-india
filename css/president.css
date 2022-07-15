@@ -524,5 +524,11 @@ h2 {
 
   .position-bottomCenter {
     width: 50%;
+    bottom: 96px;
+  }
+
+  section p {
+    width: 50%;
+    max-width: 800px;
   }
 }
