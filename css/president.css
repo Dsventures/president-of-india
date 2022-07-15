@@ -551,6 +551,7 @@ h2 {
   section p {
     width: 80%;
     margin: 0 auto;
+    font-weight: normal;
   }
 
   #add4 .content1,
