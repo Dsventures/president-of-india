@@ -78,6 +78,7 @@ section {
 
 .additional-intro {
   height: 100vh;
+  text-align: center;
 }
 
 .position-leftBottom {
@@ -87,6 +88,12 @@ section {
   width: 71%;
 }
 
+.position-bottomCenter {
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
+}
+
 .pull-left {
   float: left;
   margin-right: 10px;
@@ -94,7 +101,7 @@ section {
 }
 
 .additional-intro .content1 {
-  width: 90%;
+  width: 80%;
   margin: 0 auto 20px auto;
 }
 .additional-intro .content1 p {
