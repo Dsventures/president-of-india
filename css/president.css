@@ -430,6 +430,16 @@ h2 {
 .marker.active {
   fill: #f00 !important;
 }
+
+.txtlg {
+  font-size: 40px;
+}
+.txtblue {
+  color: #447db9;
+}
+.txtred {
+  color: #f70f0f;
+}
 @media (max-width: 600px) {
   .cover img:first-child {
     width: 48%;
@@ -528,7 +538,17 @@ h2 {
     bottom: 96px;
   }
 
+  .mp-formula {
+    margin: 0 auto 20px auto;
+  }
+
+  .flexLayout {
+    width: 70%;
+    margin: 40px auto;
+  }
+
   section p {
     width: 80%;
+    margin: 0 auto;
   }
 }
