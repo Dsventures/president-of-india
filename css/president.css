@@ -84,8 +84,8 @@ section {
 .position-leftBottom {
   position: absolute;
   bottom: 0;
-  right: -14px;
-  width: 71%;
+  width: 100%;
+  z-index: -1;
 }
 
 .position-bottomCenter {
@@ -138,8 +138,8 @@ h2 {
   position: relative;
   height: 435px;
   width: 95%;
-  margin: 0 auto;
-  max-width: 400px;
+  margin: 0 auto 0 auto;
+  max-width: 356px;
 }
 .critieria__img .sizelg {
   width: 60%;
@@ -457,6 +457,12 @@ h2 {
   }
   .tv9-interactives {
     padding: 0 0 7500px 0;
+  }
+  .position-leftBottom {
+    bottom: 97px;
+  }
+  .position-bottomCenter {
+    bottom: 70px;
   }
 }
 
