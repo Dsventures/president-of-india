@@ -442,6 +442,12 @@ h2 {
   color: #f70f0f;
 }
 
+.add4-img,
+.add5-img {
+  width: 200px;
+  margin: 0 auto 40px auto;
+}
+
 @media (max-width: 600px) {
   .cover img:first-child {
     width: 48%;
@@ -564,12 +570,6 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .add4-img,
-  .add5-img {
-    width: 200px;
-    margin: 0 auto 40px auto;
   }
 
   /* #add5 {
