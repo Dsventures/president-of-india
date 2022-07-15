@@ -566,6 +566,12 @@ h2 {
     transform: translate(-50%, -50%);
   }
 
+  .add4-img,
+  .add5-img {
+    width: 200px;
+    margin: 0 auto 40px auto;
+  }
+
   /* #add5 {
     background-image: url("../img/MPBG.jpg");
     background-size: cover;
