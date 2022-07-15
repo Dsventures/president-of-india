@@ -131,6 +131,7 @@ h2 {
   text-align: center;
   width: 90%;
   margin: 0 auto 10px auto;
+  font-weight: normal;
 }
 
 /* Criteria */
@@ -387,6 +388,10 @@ h2 {
   text-align: center;
   width: 90%;
   margin: 200px auto;
+  font-weight: normal;
+}
+.votingprocess-pt1-2 p {
+  margin: 0 0 10px 0;
 }
 
 .ending {
