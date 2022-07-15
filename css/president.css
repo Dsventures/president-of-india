@@ -234,7 +234,7 @@ h2 {
   width: 50%;
   position: absolute;
   right: 20px;
-  top: 41px;
+  top: 50px;
   text-align: center;
 }
 #totMLAValue p {
@@ -353,6 +353,10 @@ h2 {
   position: absolute;
   top: 5px;
   right: 52px;
+  padding: 8px 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
 }
 
 .marker:hover,
