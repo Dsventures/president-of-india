@@ -331,12 +331,12 @@ h2 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
-  max-width: 300px;
+  max-width: 375px;
   border-radius: 20px;
 }
 .tooltip__content p {
   font-size: 24px;
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
   font-weight: 700;
 }
 .tooltip__content ul {
@@ -345,7 +345,8 @@ h2 {
   column-gap: 15px;
 }
 .tooltip__content ul li {
-  line-height: 18px;
+  line-height: 16px;
+  font-size: 12px;
 }
 .tooltip__content ul li:nth-child(1) {
   width: 20%;
