@@ -566,14 +566,14 @@ h2 {
     transform: translate(-50%, -50%);
   }
 
-  #add5 {
-    background-image: url("../img/inside-parliament.jpg");
+  /* #add5 {
+    background-image: url("../img/MPBG.jpg");
     background-size: cover;
   }
   #add4 {
-    background-image: url("../img/inside-parliament.jpg");
+    background-image: url("../img/MLABG.jpg");
     background-size: cover;
-  }
+  } */
   #add6 {
     background-image: url("../img/inside-parliament.jpg");
     background-size: cover;
