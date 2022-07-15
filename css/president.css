@@ -566,6 +566,14 @@ h2 {
     transform: translate(-50%, -50%);
   }
 
+  #add5 {
+    background-image: url("../img/inside-parliament.jpg");
+    background-size: cover;
+  }
+  #add4 {
+    background-image: url("../img/inside-parliament.jpg");
+    background-size: cover;
+  }
   #add6 {
     background-image: url("../img/inside-parliament.jpg");
     background-size: cover;
