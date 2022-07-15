@@ -162,6 +162,9 @@ h2 {
   display: flex;
   column-gap: 15px;
 }
+.rajyasabha ul li {
+  font-size: 13px;
+}
 .rajyasabha ul li span {
   font-size: 24px;
   margin-top: 5px;
