@@ -217,5 +217,89 @@ var pinCandSelect = ScrollTrigger.create({
   end: "+=700%",
   pinSpacing: true,
   toggleClass: { targets: "#votingProcess2", className: "is-active" },
-  markers: true,
+  markers: false,
+});
+
+var timlinePrez = gsap.timeline();
+
+timlinePrez.from("#theprezdesk", { opacity: 0, y: "50px" }, "one-1");
+timlinePrez.from("#theprezflag", { opacity: 0, x: "-50px" }, "one-1");
+timlinePrez.from("#theprezstatue", { opacity: 0, x: "50px" }, "one-1");
+timlinePrez.from("#thepresidentpic", { opacity: 0, y: "-50px" }, "one-2");
+
+var pinPrez = ScrollTrigger.create({
+  animation: timlinePrez,
+  trigger: ".ending",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=300%",
+  pinSpacing: true,
+  toggleClass: { targets: ".ending", className: "is-active" },
+  markers: false,
+});
+
+var add1 = ScrollTrigger.create({
+  trigger: "#add1",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=100%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add1", className: "is-active" },
+  markers: false,
+});
+
+var add2 = ScrollTrigger.create({
+  trigger: "#add2",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=100%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add2", className: "is-active" },
+  markers: false,
+});
+
+var add3 = ScrollTrigger.create({
+  trigger: "#add3",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=100%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add3", className: "is-active" },
+  markers: false,
+});
+
+var add4 = ScrollTrigger.create({
+  trigger: "#add4",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=100%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add4", className: "is-active" },
+  markers: false,
+});
+
+var add5 = ScrollTrigger.create({
+  trigger: "#add5",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=200%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add5", className: "is-active" },
+  markers: false,
+});
+var add6 = ScrollTrigger.create({
+  trigger: "#add6",
+  pin: true,
+  scrub: true,
+  start: "top 100px",
+  end: "+=200%",
+  pinSpacing: true,
+  toggleClass: { targets: "#add6", className: "is-active" },
+  markers: false,
 });
