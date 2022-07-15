@@ -568,4 +568,11 @@ h2 {
   .ending svg {
     width: 50%;
   }
+  .vAlign {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
 }
