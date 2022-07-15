@@ -528,7 +528,6 @@ h2 {
   }
 
   section p {
-    width: 50%;
-    max-width: 800px;
+    width: 80%;
   }
 }
