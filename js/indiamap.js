@@ -227,29 +227,31 @@ function drawIndiaMap(selector, type, dataformap) {
       .attr("d", marker)
       .style("fill", "#69b3a2");
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (!isMobile) {
-      planes.on("mouseover", tool_tip.show).on("mouseout", tool_tip.hide);
-    } else {
-      planes.on("click", function (d, i) {
-        console.log(d[1]);
-        var fd = mlaData.filter(function (itm) {
-          return itm.stateCode === d[1];
-        });
-        d3.selectAll(".marker").classed("active", false);
-        document.getElementById("dropdownState").value = d[1];
-        document.getElementById(d[1]).classList.add("active");
-        document.getElementById("mapIndia").style.marginTop = "160px";
-        document.getElementById("tooltip").style.marginTop = "-148px";
-        document.getElementById("tooltip").style.display = "block";
-        document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
-        document.getElementById("noSeatsMob").innerHTML =
-          fd[0]["noSeatsLAS"].toLocaleString("en-IN");
-        document.getElementById("eachMLAValMob").innerHTML =
-          fd[0]["eachMLAVal"].toLocaleString("en-IN");
-        document.getElementById("stateTotValMob").innerHTML =
-          fd[0]["totalValState"].toLocaleString("en-IN");
+    planes.on("click", function (d, i) {
+      console.log(d[1]);
+      var fd = mlaData.filter(function (itm) {
+        return itm.stateCode === d[1];
       });
-    }
+      d3.selectAll(".marker").classed("active", false);
+      document.getElementById("dropdownState").value = d[1];
+      document.getElementById(d[1]).classList.add("active");
+      document.getElementById("mapIndia").style.marginTop = "160px";
+      document.getElementById("tooltip").style.marginTop = "-148px";
+      document.getElementById("tooltip").style.display = "block";
+      document.getElementById("stateMob").innerHTML = fd[0]["stateName"];
+      document.getElementById("noSeatsMob").innerHTML =
+        fd[0]["noSeatsLAS"].toLocaleString("en-IN");
+      document.getElementById("eachMLAValMob").innerHTML =
+        fd[0]["eachMLAVal"].toLocaleString("en-IN");
+      document.getElementById("stateTotValMob").innerHTML =
+        fd[0]["totalValState"].toLocaleString("en-IN");
+    });
+
+    // var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    // if (!isMobile) {
+    //   planes.on("mouseover", tool_tip.show).on("mouseout", tool_tip.hide);
+    // } else {
+
+    // }
   });
 }
