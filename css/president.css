@@ -619,4 +619,9 @@ h2 {
   .tv9-interactives {
     padding: 0px 0 8500px 0;
   }
+
+  .ballotbox-animations svg,
+  .candidate-selection svg {
+    margin: 65px auto;
+  }
 }
