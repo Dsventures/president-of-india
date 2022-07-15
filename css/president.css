@@ -440,6 +440,7 @@ h2 {
 .txtred {
   color: #f70f0f;
 }
+
 @media (max-width: 600px) {
   .cover img:first-child {
     width: 48%;
@@ -561,6 +562,11 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #add6 {
+    background-image: url("../img/inside-parliament.jpg");
+    background-size: cover;
   }
   .votingprocess-pt2 p {
     width: 50%;
