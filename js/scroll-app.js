@@ -77,6 +77,8 @@ timlineElectors.from(".electors-who__two", { opacity: 0 }, "two-0");
 
 timlineElectors.from(".electors-who__note", { opacity: 0 }, "three-0");
 
+timlineElectors.from("#electors-who-sub-lead", { opacity: 0 }, "four-0");
+
 var pinElectors = ScrollTrigger.create({
   animation: timlineElectors,
   trigger: ".electors",
@@ -222,10 +224,11 @@ var pinCandSelect = ScrollTrigger.create({
 
 var timlinePrez = gsap.timeline();
 
-timlinePrez.from("#theprezdesk", { opacity: 0, y: "50px" }, "one-1");
-timlinePrez.from("#theprezflag", { opacity: 0, x: "-50px" }, "one-1");
-timlinePrez.from("#theprezstatue", { opacity: 0, x: "50px" }, "one-1");
-timlinePrez.from("#thepresidentpic", { opacity: 0, y: "-50px" }, "one-2");
+timlinePrez.from("#theprezlead", { opacity: 0 }, "one-0");
+timlinePrez.from("#theprezdesk", { opacity: 0 }, "one-1");
+timlinePrez.from("#theprezflag", { opacity: 0 }, "one-1");
+timlinePrez.from("#theprezstatue", { opacity: 0 }, "one-1");
+timlinePrez.from("#thepresidentpic", { opacity: 0 }, "one-2");
 
 var pinPrez = ScrollTrigger.create({
   animation: timlinePrez,

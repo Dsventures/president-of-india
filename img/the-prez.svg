@@ -2,12 +2,24 @@
 <!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 604.7 451.1" style="enable-background:new 0 0 604.7 451.1;" xml:space="preserve">
-<image style="overflow:visible;" width="407" height="605" xlink:href="blankface-color.png"  transform="matrix(0.6666 0 0 0.6666 166.6936 17.9969)">
-</image>
-<image style="overflow:visible;" width="4096" height="434" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0000.png"  transform="matrix(0.1478 0 0 0.1478 -0.4078 387.1662)">
-</image>
-<image style="overflow:visible;" width="927" height="2566" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0001.png"  transform="matrix(9.080609e-02 0 0 9.080609e-02 59.5764 181.3707)">
-</image>
-<image style="overflow:visible;" width="983" height="1503" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0002.png"  transform="matrix(0.1533 0 0 0.1533 440.2682 186.4933)">
-</image>
+<g id="theprezstatue">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="983" height="1503" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0002.png"  transform="matrix(0.1533 0 0 0.1533 440.2682 186.4933)">
+	</image>
+</g>
+<g id="thepresidentpic">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="407" height="605" xlink:href="blankface-color.png"  transform="matrix(0.6666 0 0 0.6666 176.6936 17.9969)">
+	</image>
+</g>
+<g id="theprezdesk">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="4096" height="434" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0000.png"  transform="matrix(0.1478 0 0 0.1478 -0.4078 387.1662)">
+	</image>
+</g>
+<g id="theprezflag">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="927" height="2566" xlink:href="C:\Users\Eunice.Dihvya\Desktop\prez\prez_0001.png"  transform="matrix(0.1504 0 0 0.1504 29.5764 28.445)">
+	</image>
+</g>
 </svg>
