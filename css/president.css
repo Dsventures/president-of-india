@@ -575,4 +575,8 @@ h2 {
     transform: translate(-50%, -50%);
     width: 100%;
   }
+
+  .tv9-interactives {
+    padding: 0 0 7500px 0;
+  }
 }
