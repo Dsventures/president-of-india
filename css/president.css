@@ -562,4 +562,10 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .votingprocess-pt2 p {
+    width: 50%;
+  }
+  .ending svg {
+    width: 50%;
+  }
 }
