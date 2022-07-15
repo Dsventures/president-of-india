@@ -90,8 +90,11 @@ section {
 
 .position-bottomCenter {
   position: absolute;
-  bottom: 75px;
+  bottom: 0;
   width: 100%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pull-left {
@@ -506,5 +509,14 @@ h2 {
 
   #dropdownState {
     display: none;
+  }
+
+  #add2 img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .position-bottomCenter {
+    width: 50%;
   }
 }
